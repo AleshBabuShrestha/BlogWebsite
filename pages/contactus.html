@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us</title>
+	<!--Using meta tags-->
+	<meta name="description" content="Technology and CV">
+	<meta name="keywords" content="CV,Technology,Parallax">
+	<meta name="author" content="Alesh Babu Shrestha">
+	<!--Linking external CSS-->
+	<link rel="stylesheet" type="text/css" href="../CSS/style.css">
+	<!--Assigning page icon-->
+	<link rel="icon" href="../images/elesh4.png">
+	<!--Linking external JavaScript-->
+	<script src="../JavaScript/myScript.js"></script>
+	<!--Creating internal CSS-->
+	<style>
+		.A{
+			margin-top: 50px;
+			margin-right: 50px;
+			width: 350px;
+			height: 500px;
+			float: right;
+			box-sizing: border-box;
+      		overflow: hidden;
+		}
+		div img{
+			width: 100%;
+			height: 300px;
+		}
+		button{
+			background-color: #E3E3E3;
+			border-radius: 0px;
+			border: 0px;
+			color: black;
+			font-family: Century Gothic;
+			height: 30px;
+			width: 70px;
+		}
+	</style>
+</head>
+<body style="background-color: #E3E3E3">
+<header><center><img src="../images/elesh4.png" width="20%"></center></header><!--Logo-->
+<nav>
+	<ul><!--Navigation Bar-->
+		<li><a href="../home.html">Home</a></li>
+		<li><a href="blog.html">Blog</a></li>
+		<li><a href="cv.html">CV</a></li>
+		<li><a href="research.html">Research</a></li>
+		<li><a href="contactus.html" style="color: #06ADA1; font-size: 20px">Contact Us</a></li>
+	</ul>
+</nav>
+<main>
+	<div class="container2" style="background-color: #E3F3F2;font-family: Century Gothic;">
+		<div class="parallax5">
+			<div>
+		<div style="margin-left: 50px;width: 50%;float: left;">
+	<p style="font-weight: bold;font-size: 30px;">Form:</p>
+	<form name="message"><!--Form Creation-->
+		First Name:</br>
+		<input type="text" name="first name" placeholder="Enter your first name"style="background-color: #E3E3E3;"><!--Text Input-->
+		</br></br>
+		Last Name:</br>
+		<input type="text" name="last name" placeholder="Enter your last name"style="background-color: #E3E3E3;"><!--Text Input-->
+		</br></br>
+		Gender: <input type="radio" name="gender" value="Male" checked style="background-color: #E3E3E3;">Male<!--Radio Button-->
+		<input type="radio" name="gender" value="female" style="background-color: #E3E3E3;">Female<!--Radio Button-->
+		<input type="radio" name="gender" value="others" style="background-color: #E3E3E3;">Others</br></br><!--Radio Button-->
+		Message:</br>
+		<textarea name="message" rows="10" cols="30" placeholder="Write a message" style="background-color: #E3E3E3;"></textarea><!--Text Area-->
+		</br></br>
+		<button onclick="validate()" style="background-color: #E3E3E3;">Sumbit</button><!--Submit Button-->
+		<!--Script for form validation-->
+		<script>
+			function validate(){
+				var fname = document.forms["message"]["first name"].value;
+				var lname = document.forms["message"]["last name"].value;
+				var message = document.forms["message"]["message"].value;			    
+			    if (fname == "") {
+			    	alert("First Name is empty. Please fill it.");
+			    }
+			    else if (lname == "") {
+			    	alert("Last Name is empty. Please fill it.");
+			    }
+			    else if (message == "") {
+			    	alert("The message box is empty. Please give a feedback.");
+			    }
+			    else{
+  				alert("We will contact you shortly!");
+  				}
+  			}
+		</script>
+	</form>
+	</div>
+<div class="A">
+	<p style="font-weight: bold;font-size: 30px;">Contact Details</p>
+	<p>Email: elesh7sth@gmail.com</p>
+	<p>Phone Number: +977-9869099647</p>
+	<div id="img">
+      <img src="../images/map1.png">
+  </div>
+  	</div>
+  	<!--Script for image slider-->
+  <script>
+    var images = ['../images/map1.png', '../images/map2.png'];
+    var x = 0;
+    var imgs = document.getElementById('img');
+    setInterval(slider, 1500);
+    function slider() {
+
+      if (x < images.length) {
+        x = x + 1;
+      } else {
+        x = 1;
+      }
+      imgs.innerHTML = "<img src=" + images[x - 1] + ">";
+    }
+  </script>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!--Creating Scroll to Top button-->
+<button class="top" onclick="scrollToTop()">Back To Top</button>
+<!--Creating footer-->
+<center><footer style="font-weight: bold;">
+<p>Copyright 2020 &copy</p>
+<p>All Rights Reserved</p>
+</footer></center>
+</body>
+</html>

@@ -1,0 +1,182 @@
+ul{
+	text-align: center;    
+	margin: auto;
+}
+ul li{
+	display: inline;
+	list-style: none;
+	margin: 40px;
+	text-align: center;
+	width: 50%;
+}
+ul li a{
+	font-family: Century Gothic;
+	font-size: 17px;
+	color: #1A1A1A;
+	text-decoration: none;
+	font-weight: bold;
+}
+.container{
+	width: 960px;
+	margin: 40px auto;
+	font-size: 24px;
+	padding: 50px;
+}
+.parallax1{
+	background: url("../images/forest.jpg") no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 550px;
+}
+.parallax2{
+	background: url("../images/lap.jpg") no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 550px;	
+}
+.parallax3{
+	background: url("../images/book.jpg") no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 550px;	
+}
+.parallax4{
+	background: url("../images/phone.jpg") no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 550px;
+}
+.info{
+	z-index: auto;
+	position: relative;
+	font-size: 100px;
+}
+main div p a{
+	text-decoration: none;
+	color: white;
+}
+.B{
+	margin-top: 50px;
+	margin-right: 70px;
+	background-color: #E3F3F2;
+	width: 45%;
+	height: 500px;
+	display: inline;
+	float: right;
+	font-weight: bold;
+	font-size: 70px;
+	font-family: Century Gothic;
+	text-align:center;		
+}
+.D{
+	margin-left: 70px;
+	background-color: #E3F3F2;
+	width: 45.6%;
+	height: 500px;
+	display: inline;
+	float: left;
+	font-weight: bold;
+	font-size: 70px;
+	font-family: Century Gothic;
+	text-align:center;
+}
+.F{
+	margin-right: 70px;
+	background-color: #E3F3F2;
+	width: 45%;
+	height: 500px;
+	display: inline;
+	float: right;
+	font-weight: bold;
+	font-size: 70px;
+	font-family: Century Gothic;
+	text-align:center;
+}
+.container2{
+	width: 960px;
+	margin: 40px auto;
+	background: #f9f9f9;
+	font-size: 20px;
+	padding: 50px;
+}
+.parallax5{
+	background: url("../images/contact.png") no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 550px;
+}
+.container3{
+	width: 1300px;
+	margin: 40px auto;
+	padding: 30px;
+}
+.info2{
+	z-index: auto;
+	position: relative;
+	font-size: 80px;
+	text-align: center; 
+	padding-top: 20%;
+	font-family: Century Gothic;
+}
+.info3{
+	z-index: auto;
+	position: relative;
+	font-size: 30px;
+	text-align: center;
+	color: grey;
+	font-family: Century Gothic;
+}
+.parallax6{
+	background: url("../images/nav.png") no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 600px;
+}
+.parallax7{
+	background: url("../images/div.png") no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 600px;
+}
+.parallax8{
+	background: url("../images/parallax.png") no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 600px;
+}
+.parallax9{
+	background: url("../images/form.png") no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 600px;
+}
+.parallax10{
+	background: url("../images/footer.png") no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 600px;
+}
+.top{
+	background-color: #E3F3F2;
+	border-radius: 0px;
+	border: 0px;
+	color: black;
+	font-weight: bold;
+	font-size: 15px;
+	font-family: Century Gothic;
+	height: 50px;
+	width: 120px;
+	align-content: center;	
+	margin-left: 690px;
+}
+@-webkit-keyframes big{
+	from{font-size: 15px;}
+	to{font-size: 18px;}
+}
+.top:hover{
+	font-size: 18px;
+	-webkit-animation-name:big;
+	-webkit-animation-duration:0.4s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-out;
+}
